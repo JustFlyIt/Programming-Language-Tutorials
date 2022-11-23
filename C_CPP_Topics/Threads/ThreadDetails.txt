@@ -1,0 +1,19 @@
+https://indico.cern.ch/event/199138/contributions/378651/attachments/295442/412882/c11-threads-paper.pdf
+
+pthreads is a C library, and was not designed with some issues critical to C++ in
+mind, most importantly object lifetimes and exceptions.
+
+pthreads provides the function pthread_cancel to cancel a thread. C++11 provides
+no equivalent to this.
+
+pthreads provides control over the size of the stack of created threads; C++11 does
+not address this issue.
+
+C++11 provides the class thread as an abstraction for a thread of execution.
+
+C++11 provides several classes and class templates for mutexes, condition variables,
+and locks , intending RAII to be used for their management.
+
+C++11 provides a sophisticated set of function and class templates to create callable
+objects and anonymous functions (lambda expressions) which are integrated into
+the thread facilities.
