@@ -18,15 +18,16 @@
 	Summary - C++ memory pointer operators
 
 	FOR VARIABLE DECLARATIONS-------------------------------------
+    References - reference and existing variable
     & when used with a variable declaration: "reference to"
-    Example: int &ra = a;
+    Example: int& ra = a;
     "ra is a reference to a"
 
     SPECIAL NOTE - WHEN THE & IS NEXT TO THE TYPE IT IS REFERENCE, NOT AN OPERATOR
     SEE REFERENCE TUTORIAL FOR MORE ON THIS.  REFERENCE IS AN ALIAS
 
     * when used with a variable declaration: "pointer to"
-    Example: int *pa;
+    Example: int* pa;
     "pa is a pointer to an integer"
 
 	FOR ALREADY DECLARED VARIABLES-------------------------------
@@ -64,7 +65,8 @@ int main ()
   int * mypointer;
 
   mypointer  = &firstvalue;   	// What is the memory address of firstvalue?
-  *mypointer = 10;		// Deferencing the pointer so that the value can be stored at the memory location.
+  *mypointer = 10;	// Deferencing the pointer so that the value can be stored at the memory location.
+  	  	  	  	  	// EVEN FOR REFERENCES (ALIAS) DEFERENCING IS NEEDED
 
   // Can now read from or write to the data pointed to by the pointer value.
   mypointer = &secondvalue;

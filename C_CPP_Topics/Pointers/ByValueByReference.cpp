@@ -50,7 +50,7 @@ int main()
     int* p1 = NULL;
     int* p2 = NULL;
 
-    cout << "p1 - " << *p1 << "   p2 - " << *p2 << "\n";
+    cout << "p1 - " << *p1 << "   p2 - " << *p2 << "\n\n";
     pass_by_value(p1); //p1 will still be NULL after this call
     pass_by_reference(p2); //p2 's value is changed to point to the newly allocate memory
 

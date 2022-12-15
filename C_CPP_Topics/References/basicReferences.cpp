@@ -24,11 +24,13 @@ void IncrementByValue(int value) {
 void IncrementWithPtr(int *value) {
   (*value)++;   //Deference the pointer to reach the value to be incremented.
   	  	  	  	//This is needed so that the value is incremented; not the pointer}
+  	  	  	  	//Order of operation requires the para's around the deference;
+  	  	  	  	//otherwise the pointer would be incremented first
 }
 
 // Passed a reference to function
 void IncrementWithReference(int& value) {
-  value++;      //Reference simplifies the syntax.
+  value++;      //Reference simplifies the above example.
 }
 
 int main ()
@@ -58,5 +60,9 @@ int main ()
 
   //int& ref2;    //Cannot do this; must set the refence to something
                 //Generates a compile error
+
+  int c = 9;
+  int& refC = c;
+  refC = d
   return 0;
 }
