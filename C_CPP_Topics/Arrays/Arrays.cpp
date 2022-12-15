@@ -17,6 +17,14 @@ void StatusFunction() {
   id++;
 }
 
+void StatusFunction2() {
+  int id = 1;
+
+  std::cout << "StatusFunction has been called; id - " << id << std::endl << std::endl;
+
+  id++;
+}
+
 void StatusFunctionWithParam(int id) {
 
   std::cout << "StatusFunction has been called; id - " << id << std::endl << std::endl;
@@ -39,6 +47,10 @@ int main(int argc, const char * argv[]) {
     // General Function Call Demo:  Non-pointer call to a function (normal)
     std::cout << "General Function Call Demo:  call the function StatusFunction()" << "\n\n";
     StatusFunction();
+
+    // General Function Call Demo:  Non-pointer call to a function (normal)
+    std::cout << "General Function Call Demo:  call the function StatusFunction2()" << "\n\n";
+    StatusFunction2();
 
     // Function Pointer Declaration Demo:  Pointer call to a function - without auto
     std::cout << "Function Pointer Declaration Demo:  call the function StatusFunction()" << "\n\n";

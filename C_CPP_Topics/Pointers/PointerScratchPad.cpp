@@ -28,7 +28,7 @@ int main ()
 	int val1 = 4;  // Integer value contains 4.  Size of "int" is four bytes
 	
 	cout << "val1 = " << val1 << '\n';
-	cout << "address of val1: " << &val1 << '\n';
+	cout << "address of val1 (&val1): " << &val1 << '\n';
 	
 	int *val2 = &val1;
 	*val2 = 6;
@@ -52,6 +52,9 @@ int main ()
 	cout << "&valPtr = " << &valPtr << '\n';
 	cout << "*valPtr = " << *valPtr << '\n';
 	cout << "**valPtr = " << **valPtr << '\n';
+
+	int*** valPtrCubed = &valPtr;
+	cout << "***valPtr = " << *((int)**valPtr) << '\n';
 
 	return 0;
 }
