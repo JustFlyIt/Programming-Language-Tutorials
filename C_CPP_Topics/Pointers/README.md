@@ -1,5 +1,7 @@
 # Pointer
 
+Compile:  Compile example with: g++ -std=c++11 xxxx.cpp
+
 Key concept:  a pointer is nothing more than an integer containing an address of memory.  TYPES ARE NOT REQUIRED
 
 A POINTER IS AN INTEGER VARIABLE THAT JUST POINTS TO A LOCATION OF MEMORY.
